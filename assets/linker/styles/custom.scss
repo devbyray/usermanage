@@ -16,6 +16,15 @@ body {
 	margin-bottom: 16px;
 }
 
+.input-form {
+	label {
+		width: 100%;
+		display: block;
+		position: relative;
+		float: left;
+	}
+}
+
 footer {
 	div {
 		padding: 5px;

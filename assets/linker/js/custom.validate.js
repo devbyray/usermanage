@@ -23,10 +23,10 @@ $(document).ready(function(){
 	      	equalTo: "#password"
 	      }
 	    },
-			success: function(element) {
-				element
-				.text('OK!').addClass('valid')
-			}
+		success: function(element) {
+			element
+			.text('OK!').addClass('valid')
+		}
 	  });
 
 });
