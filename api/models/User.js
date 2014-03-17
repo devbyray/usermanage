@@ -17,6 +17,10 @@ module.exports = {
 		required: true,
 	},
 
+	familyname: {
+		type: 'string',
+	},
+
 	title: {
 		type: 'string',
 	},
@@ -28,10 +32,37 @@ module.exports = {
 		unique: true
 	},
 
+	birthday: {
+		type: 'string',
+	},
+
+	phone: {
+		type: 'string',
+	},
+
+	address: {
+		type: 'string',
+	},
+
+	postal: {
+		type: 'string',
+	},
+
+	city: {
+		type: 'string',
+	},
+
+	country: {
+		type: 'string',
+	},
+
 	encryptedPassword: {
 		type: 'string',
 	},
 
+	profileUrl: {
+		type: 'string',
+	},
 	// toJSON: function() {
 	// 	var obj = this.toObject();
 	// 	delete obj.password;
