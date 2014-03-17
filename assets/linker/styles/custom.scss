@@ -1,4 +1,8 @@
 /* Custom styles */
+
+/* Variable */
+$white : #fff;
+
 body {
 	padding-top: 72px;
 }
@@ -10,4 +14,13 @@ body {
 .input-group,
 .form-control {
 	margin-bottom: 16px;
+}
+
+footer {
+	div {
+		padding: 5px;
+	}
+	* {
+		color: $white;
+	}
 }

@@ -42,10 +42,26 @@ module.exports = {
 
   		// After succesfully creating the user
   		// Redirect to the show action
-  		res.json(user);
-  		req.session.flash = {};
+  		// res.json(user);
+
+  		res.redirect('/user/show/'+user.id);
   	});
-  }
+  },
+
+  show: function(req, res, next) {
+  	User.findOne(req.param('id'), function foundUser(err, user) {
+  		// if user is not find output an error
+  		if (err) return next(err);
+
+  		// if the user is find
+  		if(!user) return next();
+
+  		// Show user
+  		res.view({
+  			user:user
+  		});
+  	});
+  },
 
   /**
    * Overrides for the settings in `config/controllers.js`
